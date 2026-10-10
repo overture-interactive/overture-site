@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overture Interactive, Inc.</title>
+  <meta name="description" content="Overture Interactive, Inc. makes multiplayer browser games and music practice apps: LoL Sketch, Magistones and Fret Flow.">
+  <meta property="og:title" content="Overture Interactive, Inc.">
+  <meta property="og:description" content="Multiplayer browser games and music practice apps: LoL Sketch, Magistones and Fret Flow.">
+  <meta property="og:url" content="https://overtureinteractive.com">
+  <meta name="theme-color" content="#14121f">
+  <link rel="canonical" href="https://overtureinteractive.com/">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --ink: #1c1a2b;
+      --muted: #6b6880;
+      --accent: #5b3fd6;
+      --line: #e6e3ee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14121f; --ink: #f1eefc; --muted: #a29fb8; --accent: #a894ff; --line: #2a2740; }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { flex: 1; display: grid; place-items: center; padding: 3rem 1.25rem; }
+    .wrap { width: min(34rem, 100%); }
+    .mark { font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+    h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -.01em; }
+    p { margin: 0 0 1.25rem; }
+    .lead { font-size: 1.15rem; color: var(--muted); }
+    .card {
+      display: block; margin: 2rem 0; padding: 1.1rem 1.25rem;
+      border: 1px solid var(--line); border-radius: .9rem;
+      color: inherit; text-decoration: none;
+      transition: border-color .15s, transform .15s;
+    }
+    .card:hover, .card:focus-visible { border-color: var(--accent); transform: translateY(-1px); outline: none; }
+    .card strong { display: block; font-size: 1.05rem; }
+    .card span { color: var(--muted); font-size: .95rem; }
+    a { color: var(--accent); }
+    h2 { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 2rem 0 .75rem; font-weight: 600; }
+    .card { margin: 0 0 .75rem; }
+    .card--static:hover { border-color: var(--line); transform: none; }
+    .stores { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .85rem; }
+    .stores a {
+      display: inline-block; padding: .45rem .9rem; border-radius: 999px;
+      border: 1px solid var(--line); color: var(--ink); text-decoration: none;
+      font-size: .9rem; font-weight: 600; transition: border-color .15s;
+    }
+    .stores a:hover, .stores a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+    footer { padding: 1.5rem 1.25rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; text-align: center; }
+    footer p { margin: 0 auto .5rem; max-width: 40rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <p class="mark">Overture Interactive, Inc.</p>
+      <h1>We make games and apps.</h1>
+      <p class="lead">Multiplayer browser games you can jump into with friends, and tools for practicing music.</p>
+
+      <h2>Games</h2>
+      <a class="card" href="https://lolsketch.com" rel="noopener">
+        <strong>LoL Sketch</strong>
+        <span>A multiplayer drawing and guessing game. Play at lolsketch.com &rarr;</span>
+      </a>
+      <a class="card" href="https://magistones.devonpmack.partykit.dev" rel="noopener">
+        <strong>Magistones</strong>
+        <span>A multiplayer 3D arena battle game. Pick abilities from the shop, then fight. Play in your browser &rarr;</span>
+      </a>
+
+      <h2>Apps</h2>
+      <div class="card card--static">
+        <strong>Fret Flow</strong>
+        <span>A music practice app: guitar fretboard drills, ear training and a live tuner. No accounts and no ads.</span>
+        <div class="stores">
+          <a href="https://apps.apple.com/app/fret-flow/id6761880540" rel="noopener">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.devonpmack.fretflow" rel="noopener">Google Play</a>
+        </div>
+      </div>
+
+      <p style="margin-top:2rem">Contact: <a href="mailto:contact@overtureinteractive.com">contact@overtureinteractive.com</a></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Overture Interactive, Inc. A Delaware corporation.</p>
+    <p><a href="https://lolsketch.com/terms">Terms of Service and Privacy Policy</a></p>
+    <p>LoL Sketch isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.</p>
+  </footer>
+</body>
+</html>

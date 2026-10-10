@@ -1,0 +1,9 @@
+{
+  "name": "overture-site",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public" },
+  "routes": [
+    { "pattern": "overtureinteractive.com", "custom_domain": true },
+    { "pattern": "www.overtureinteractive.com", "custom_domain": true }
+  ]
+}
