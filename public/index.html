@@ -9,7 +9,12 @@
   <meta property="og:description" content="Multiplayer browser games and music practice apps: LoL Sketch, Magistones and Fret Flow.">
   <meta property="og:url" content="https://overtureinteractive.com">
   <meta name="theme-color" content="#14121f">
+  <meta property="og:image" content="https://overtureinteractive.com/overture-icon-512.png">
   <link rel="canonical" href="https://overtureinteractive.com/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <style>
     :root {
       --bg: #fbfaf7;
@@ -33,7 +38,8 @@
     }
     main { flex: 1; display: grid; place-items: center; padding: 3rem 1.25rem; }
     .wrap { width: min(34rem, 100%); }
-    .mark { font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+    .mark { display: flex; align-items: center; gap: .6rem; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
+    .mark svg { width: 2.4rem; height: 2.4rem; color: var(--accent); flex: none; }
     h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -.01em; }
     p { margin: 0 0 1.25rem; }
     .lead { font-size: 1.15rem; color: var(--muted); }
@@ -64,7 +70,7 @@
 <body>
   <main>
     <div class="wrap">
-      <p class="mark">Overture Interactive, Inc.</p>
+      <p class="mark"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill-rule="evenodd" d="M256 94a162 162 0 1 0 .001 0ZM256 138a118 118 0 1 1-.001 0Z" fill="currentColor"/><rect x="204" y="234" width="24" height="44" rx="12" fill="currentColor"/><rect x="244" y="216" width="24" height="80" rx="12" fill="currentColor"/><rect x="284" y="198" width="24" height="116" rx="12" fill="currentColor"/></svg>Overture Interactive, Inc.</p>
       <h1>We make games and apps.</h1>
       <p class="lead">Multiplayer browser games you can jump into with friends, and tools for practicing music.</p>
 
