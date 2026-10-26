@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Overture Interactive, Inc.</title>
-  <meta name="description" content="Overture Interactive, Inc. makes multiplayer browser games and music practice apps: LoL Sketch, Magistones and Fret Flow.">
+  <meta name="description" content="Overture Interactive, Inc. makes multiplayer browser games and music practice apps: LoL Sketch, Doodl and Fret Flow. LoL Sketch has over 14,000 monthly visitors.">
   <meta property="og:title" content="Overture Interactive, Inc.">
-  <meta property="og:description" content="Multiplayer browser games and music practice apps: LoL Sketch, Magistones and Fret Flow.">
+  <meta property="og:description" content="Multiplayer browser games and music practice apps: LoL Sketch, Doodl and Fret Flow.">
   <meta property="og:url" content="https://overtureinteractive.com">
   <meta name="theme-color" content="#14121f">
   <meta property="og:image" content="https://overtureinteractive.com/overture-icon-512.png">
@@ -37,7 +37,7 @@
       font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
     main { flex: 1; display: grid; place-items: center; padding: 3rem 1.25rem; }
-    .wrap { width: min(34rem, 100%); }
+    .wrap { width: min(40rem, 100%); }
     .mark { display: flex; align-items: center; gap: .6rem; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem; }
     .mark svg { width: 2.4rem; height: 2.4rem; color: var(--accent); flex: none; }
     h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -.01em; }
@@ -63,6 +63,10 @@
       font-size: .9rem; font-weight: 600; transition: border-color .15s;
     }
     .stores a:hover, .stores a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+    .shot { display: block; width: 100%; height: auto; margin: 0 0 1rem; border: 1px solid var(--line); border-radius: .75rem; }
+    .stats { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin: .85rem 0 0; padding: 0; list-style: none; color: var(--ink); font-size: .95rem; }
+    .stats strong { display: inline; font-size: inherit; }
+    .links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 1.25rem; padding: 0; list-style: none; }
     footer { padding: 1.5rem 1.25rem 2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; text-align: center; }
     footer p { margin: 0 auto .5rem; max-width: 40rem; }
   </style>
@@ -71,20 +75,31 @@
   <main>
     <div class="wrap">
       <p class="mark"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill-rule="evenodd" d="M256 94a162 162 0 1 0 .001 0ZM256 138a118 118 0 1 1-.001 0Z" fill="currentColor"/><rect x="204" y="234" width="24" height="44" rx="12" fill="currentColor"/><rect x="244" y="216" width="24" height="80" rx="12" fill="currentColor"/><rect x="284" y="198" width="24" height="116" rx="12" fill="currentColor"/></svg>Overture Interactive, Inc.</p>
-      <h1>We make games and apps.</h1>
-      <p class="lead">Multiplayer browser games you can jump into with friends, and tools for practicing music.</p>
+      <h1>We make multiplayer browser games.</h1>
+      <p class="lead">Overture Interactive is a small independent studio building games you can jump into with friends, plus tools for practicing music.</p>
 
-      <h2>Games</h2>
-      <a class="card" href="https://lolsketch.com" rel="noopener">
+      <h2>Flagship game</h2>
+      <div class="card card--static">
+        <img class="shot" src="/lolsketch-gameplay.jpg" width="1400" height="716" alt="LoL Sketch mid-game: a player draws on a shared canvas while others guess in chat">
         <strong>LoL Sketch</strong>
-        <span>A multiplayer drawing and guessing game. Play at lolsketch.com &rarr;</span>
-      </a>
-      <a class="card" href="https://magistones.devonpmack.partykit.dev" rel="noopener">
-        <strong>Magistones</strong>
-        <span>A multiplayer 3D arena battle game. Pick abilities from the shop, then fight. Play in your browser &rarr;</span>
-      </a>
+        <span>A multiplayer drawing and guessing game for League of Legends and Valorant fans. Free to play in your browser, with 25 languages and a Discord Activity so groups can play inside any voice channel.</span>
+        <ul class="stats">
+          <li><strong>14,000+</strong> monthly visitors</li>
+          <li><strong>7,000+</strong> games started a month</li>
+          <li><strong>Free</strong> to play, no sign-up</li>
+        </ul>
+        <div class="stores">
+          <a href="https://lolsketch.com" rel="noopener">Play LoL Sketch</a>
+          <a href="https://discord.com/application-directory/1289304357854117898" rel="noopener">Add to Discord</a>
+          <a href="https://lolsketch.com/changelog" rel="noopener">What's new</a>
+        </div>
+      </div>
 
-      <h2>Apps</h2>
+      <h2>More games and apps</h2>
+      <a class="card" href="https://doodl.gg" rel="noopener">
+        <strong>Doodl</strong>
+        <span>Draw and guess with friends, with custom word lists for any group. Our second game, built on the same multiplayer engine. Play at doodl.gg &rarr;</span>
+      </a>
       <div class="card card--static">
         <strong>Fret Flow</strong>
         <span>A music practice app: guitar fretboard drills, ear training and a live tuner. No accounts and no ads.</span>
@@ -94,7 +109,13 @@
         </div>
       </div>
 
-      <p style="margin-top:2rem">Contact: <a href="mailto:contact@overtureinteractive.com">contact@overtureinteractive.com</a></p>
+      <h2>About</h2>
+      <p>Overture Interactive, Inc. is a Delaware corporation founded in 2026. Our games run on Cloudflare: gameplay rooms are Durable Objects on Workers, with assets on R2 and our domains on Cloudflare DNS.</p>
+      <ul class="links">
+        <li><a href="https://github.com/lolsketch" rel="noopener">GitHub</a></li>
+        <li><a href="https://discord.gg/FySA5dysed" rel="noopener">LoL Sketch Discord</a></li>
+        <li><a href="mailto:contact@overtureinteractive.com">contact@overtureinteractive.com</a></li>
+      </ul>
     </div>
   </main>
   <footer>
